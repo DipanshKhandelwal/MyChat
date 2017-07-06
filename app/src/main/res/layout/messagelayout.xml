@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/message">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0px">
+
+        <ImageView
+            android:layout_width="51dp"
+            app:srcCompat="@drawable/com_facebook_close"
+            android:id="@+id/dp_xml"
+            android:maxWidth="35dp"
+            android:maxHeight="35dp"
+            android:padding="3dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Message" />
+
+            <TextView
+                android:id="@+id/name_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                tools:text="Name" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_xml"
+            tools:text="Time"
+            android:layout_weight="1"
+            android:text="time"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+
+
+</LinearLayout>
